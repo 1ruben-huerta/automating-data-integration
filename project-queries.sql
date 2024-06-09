@@ -44,7 +44,6 @@ GROUP BY title, is_english
 ORDER BY sales DESC;
 
 
-
 --extracting raw data for detailed section
 SELECT i.film_id, f.title, CASE l.language_id
 WHEN 1 THEN 'Yes' ELSE 'No' END AS is_english, r.rental_id, r.customer_id,
